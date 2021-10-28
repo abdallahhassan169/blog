@@ -1,0 +1,731 @@
+/* global */
+:root{
+    --bgcolor:#F0F2F5;
+    --color:#1876f2;
+    --bghover:#dddfe2;
+    --bodycolor:#DADDE1;
+    --darkgray:#8D949E;
+    --red:#fa383e;
+    --green:#00A400;
+    --blue:#3578E5;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: var(--bgcolor); */
+    background-color: #DADDE1;
+}
+/* navbar */
+nav{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:65px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+nav .iconsearch{
+    display: flex;
+    align-items: center;
+}
+nav .iconsearch .fa-facebook{
+    font-size: 40px;
+    color: var(--color);
+}
+
+nav .iconsearch input{
+    border: none;
+    outline: none;
+    background-color: #F0F2F5;
+    width: 300px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 30px;
+}
+nav .iconsearch .fa-search{
+    position: relative;
+    right: -32px;
+    z-index: 2;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    color: #777;
+    font-size: 22px;
+    width: 93px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 0px;
+}
+nav ul li:hover{
+    background-color: var(--bghover);
+}
+nav div.other{
+    display: flex;
+    align-items: center;
+}
+nav div.other .id{
+    background-color: #c0d5f1;
+    border-radius: 30px;
+    padding: 5px 10px;
+    overflow: hidden;
+    min-width: 130px;
+    max-width: 180px;
+    margin-right: 10px;
+}
+nav div.other .id img{
+    max-width: 30px;
+    border-radius: 50%;
+}
+nav div.other .id span{
+    color: var(--color);
+    font-weight: 600;
+}
+nav div.other .icon{
+    font-size: 20px;
+    background-color: #d9dadb;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    margin-right: 10px;
+}
+/* photo section */
+.photo-sec{
+    background-color: var(--bgcolor);
+    margin-bottom: 20px;
+}
+.photo-sec .cover{
+    background-color: #ddd;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.photo-sec .cover .img-cover , .photo-sec .photo .profile-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.photo-sec .photos{
+    position: relative;
+    max-height: 400px;
+}
+.photo-sec .photo{
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-50%);
+    /* overflow: hidden; */
+    border: 5px solid #F0F2F5;
+}
+.photo-sec .photo .profile-img{
+    border-radius: 50%;
+}
+.photo-sec .cover .edit-cover{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #000;
+    background-color: #F0F2F5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.photo-sec .cover .edit-cover i{
+    margin-right: 3px;
+}
+.photo-sec .cover .edit-cover:hover{
+    background-color: var(--bghover);
+}
+.photo-sec .photo .edit-photo{
+    background-color: var(--bghover);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.photo-sec .photo .edit-photo i{
+    font-size: 25px;
+}
+.photo-sec .user-name{
+    text-align: center;
+    font-weight: 600;
+}
+.photo-sec .bio a{
+    display: block;
+    text-align: center;
+    color: var(--color);
+}
+.photo-sec .bio .descr{
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+.photo-sec .bio .descr textarea{
+    width: 100%;
+    height: 85px;
+    background-color: var(--bghover);
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 7px;
+}
+.photo-sec .bio .descr textarea:focus{
+    border: 1px solid var(--color);
+    background-color: #F0F2F5;
+}
+.photo-sec .bio .descr textarea:hover{
+    background-color: rgb(238, 236, 236);
+}
+.photo-sec .bio .descr .text{
+    color: #777;
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    right: 0px;
+    /* margin-bottom: 10px; */
+}
+.photo-sec .bio .descr .option{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo-sec .bio .descr .option .cancel , .photo-sec .bio .descr .option .save{
+    border: none;
+    outline: none;
+    background-color: var(--bghover);
+    color: #000;
+    padding: 9px;
+    border-radius: 7px;
+}
+.photo-sec .bio .descr .option .save{
+    color: #777;
+    opacity: .5;
+}
+.photo-sec .op ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.photo-sec .op ul li{
+    border-radius: 3px;
+    color: #555;
+    padding: 10px 17px;
+    cursor: pointer;
+}
+.photo-sec .op ul li:hover{
+    background-color: rgb(207, 205, 205);
+}
+.photo-sec .op ul li.active{
+    color: var(--color);
+    border-bottom: 3px solid var(--color);
+}
+.photo-sec .op .add button{
+    border: none;
+    outline: none;
+    color: #000;
+    background-color:#ddd ;
+    padding: 10px 17px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.photo-sec .op .add button.one{
+    background-color: var(--color);
+    color: #fff;
+}
+.photo-sec .op .add .one span{
+    background-color: #fff;
+    display: inline-block;
+    color: var(--color);
+    padding: 1px 6px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.photo-sec .op .add .two span{
+    margin-right: 3px;
+}
+.photo-sec .op{
+    display: flex;
+    margin-top: 25px;
+    border-top: 1px solid #b9b8b8;
+    padding: 10px;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+/* content section */
+.content{
+    height: 1000px;
+}
+.info{
+    background-color: var(--bgcolor);
+    padding: 20px;
+    border-radius: 8px;
+}
+.info .but button{
+    border: none;
+    outline: none;
+    background: #666;
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: var(--bodycolor);
+}
+.intro i{
+    color: var(--darkgray);
+    font-size: 18px;
+}
+.intro a{
+    color: #000;
+    font-weight: 700;
+}
+.intro .text{
+    margin-bottom: 15px;
+}
+/* create post */
+.posts .create-post{
+    background-color: var(--bgcolor);
+    padding: 13px 17px;
+    padding-bottom: 0;
+    border-radius: 8px;
+}
+.posts .create-post .create{
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.posts .create-post .image{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.posts .create-post img{
+    width: 45px;
+    background-size: cover;
+}
+.posts .create-post .create input{
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: var(--bghover);
+}
+.posts .create-post .video{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.posts .create-post .video .one , .posts .create-post .video .two ,  .create-post .video .three{
+    text-align: center;
+    color: #777;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.posts .create-post .video div:hover{
+    background-color: var(--bghover);
+}
+.posts .create-post .video .one i{
+    color: var(--red);
+    font-size: 20px;
+    margin-right: 5px;
+}
+.posts .create-post .video .two i{
+    color: var(--green);
+    font-size: 20px;
+    margin-right: 5px;
+}
+.posts .create-post .video .three i{
+    color: var(--blue);
+    font-size: 20px;
+    margin-right: 5px;
+}
+/* post-style */
+.post-style{
+    margin-top: 20px;
+    background-color: var(--bgcolor);
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.post-style .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.post-style h5{
+    font-weight: 700;
+}
+.post-style .title .filt , .post-style .title .manage{
+    border: none;
+    outline: none;
+    background-color: var(--bghover);
+    padding: 10px 13px;
+    border-radius: 5px;
+}
+.post-style .style{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.post-style .style .list , .post-style .style .grid{
+    text-align: center;
+    padding: 10px 5px;
+}
+.post-style .style .active{
+    color: var(--color);
+    border-bottom: 3px solid var(--color);
+}
+/* post */
+.post{
+    background-color: var(--bgcolor);
+    /* height: 300px; */
+    border-radius: 8px;
+}
+.post .user .image{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+.post .user .image img{
+    width: 45px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.post .user .option{
+    width: 30px;
+    height: 30px;
+    /* background-color: #777; */
+    text-align: center;
+    border-radius: 50%;
+}
+.post .user .option span{
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 50%;
+}
+.post .user .option:hover{
+    background-color: var(--bghover);
+}
+.post{
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.post .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post .user .name-image{
+    display: flex;
+    align-items: center;
+}
+.post .user .name-date .name{
+    color: #000;
+    font-weight: 600;
+}
+.post .user .name-date .date a{
+    color: #777;
+    font-size: 14px;
+}
+.post .user .name-date .date{
+    cursor: pointer;
+}
+.post .post-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    max-height:120 ;
+}
+.post .post-content img{
+    max-width: 100%;
+    max-height: 500px;
+    width:30%;
+}
+.post .actions{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.post .actions i{
+    margin-right: 5px;
+}
+.post .actions div{
+    cursor: pointer;
+}
+.post .write-comment{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+.post .write-comment .image{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.post .write-comment .image img{
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.post .write-comment .com-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.post .write-comment .com-input{
+    width: 100%;
+}
+.post .write-comment input{
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: var(--bghover);
+}
+.post .write-comment span{
+    font-size: 12px;
+}
+.post .write-comment .com-input i{
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    color: #777;
+    cursor: pointer;
+}
+.write-comment .post .user .author{
+    color: #000;
+}
+.write-comment .post .user .control{
+    color: #777;
+}
+.write-comment .post .user .comment-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+    background-color: var(--bghover);
+}
+
+.card-body .image img{
+    max-width: 70px;
+    border-radius: 40px;
+}
+.card-body textarea  {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.card-body .btto {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+textarea{
+    min-height: 80px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.card-body .icon1{
+    display: flex;
+    max-width: 30px;
+    color: #777;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-left: 97%;
+}
+.card-body .choice{
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 20px;
+    margin: 20px 0;
+   
+}
+.card-body .choice p{
+    font-size: 15px;
+    font-weight: 600px;
+    color: #595959;
+   padding-top: 10px;
+}
+.card-body .choice .icons{
+    display: flex;
+    max-width: 40px;
+    color: #777;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-left: 80%;
+}
+.card-body .choice .icons i{
+    padding-right: 6px;
+}
+.card-header{
+   background-color: #fff;
+}.container2{
+    width: 800px;
+    
+    margin: 20px auto;
+    background-color:var(--bgcolor) ;
+}
+header{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+header h3{
+    text-align: center;
+    margin: 0
+}
+header i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title .edit{
+    text-decoration: none;
+}
+.photo-edit .element , .cover-edit .element , .bio .element span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #777;
+}
+.photo-edit .element img{
+    border-radius: 50%;
+    background-size: cover;
+}
+.cover-edit .element img{
+    width: 600px;
+    height: 260px;
+    background-size: cover;
+}
+.intro i{
+    color: var(--darkgray);
+    font-size: 18px;
+}
+.intro .in{
+    color: #000;
+    font-weight: 700;
+}
+.intro .text{
+    margin-bottom: 15px;
+}
+.hobbies .element , .featured .element{
+    padding: 10px;
+}
+button.save{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    color: var(--color);
+    background-color: #caddfc;
+    font-size: 16px;
+}
+.padding{
+    padding: 15px;
+}
+.friend img{
+    width:120px;
+     height:120px; 
+     margin-left: 30px;
+     margin-bottom:20px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.friend2 img{
+    width:120px;
+     height:t120p;
+     margin-bottom:20px;
+       margin-left: 30px;
+        border-radius: 50%;
+}
+.con{
+    background-color: var(--bgcolor);
+}
+.con .head h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.friends{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:10px;
+    padding-bottom: 10px;
+}
+.friends .card{
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.friends .card img{
+    width: 95px;
+    max-height: 95px;
+}
+.friends .card a{
+    color: black;
+    text-decoration: none;
+}
+.friends .card p a{
+    color: #777;
+    font-size: 14px;
+}
+.friends .card .dots span a{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+}

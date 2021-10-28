@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- css file -->
+    <link rel="stylesheet" href="css/facebook.css"/>
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+    
+    <title>Facebook</title>
+</head>
+<body>
+    <!-- start navbar -->
+    <nav>
+        <div class="iconsearch">
+            <i class="fab fa-facebook"></i>
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search Facebook" name="search">
+
+        </div>
+        <ul>
+           <a href="homepage.html" ><li><i class="fas fa-home"></i></li></a>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fas fa-store"></i></li>
+            <a href="friendrequest.html"><li><i class="fas fa-users"></i></li></a>
+            <li><i class="fas fa-hat-wizard"></i></li>
+        </ul>
+        <div class="other">
+            <div class="id">
+                <img src="images/person-icon.png">
+                <a href="facebook.html"><span>user</span></a>
+            </div>
+
+             <span class="icon">
+                <i class="fas fa-bars"></i>
+             </span>
+
+             <span class="icon">
+                <i class="fab fa-facebook-messenger"></i>
+             </span>
+
+             <span class="icon">
+                <i class="fas fa-bell"></i>
+             </span>
+
+             <span class="icon">
+                <i class="fas fa-caret-down"></i>
+             </span>
+        </div>
+
+    </nav>
+    <div class="container">
+        <!-- photo section -->
+        <section class="photo-sec">
+            <div class="photos">
+                <div class="cover">
+                    <img class="img-cover" src="images/Topic - Facebook.jpeg">
+                    <div class="edit-cover">
+                        <i class="fas fa-camera"></i>
+                        <span>Edit Cover Photo</span>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img class="profile-img" src="images/face.png">
+                    <span class="edit-photo">
+                        <i class="fas fa-camera"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="description">
+                <h1 class="user-name">Facebook</h1>
+                <div class="bio">
+                    <a href="#">Add Bio</a>
+                    <div class="descr">
+                        <textarea placeholder="Describe Who You Are
+                        "></textarea>
+                        <span class="text">101 characters remaining</span>
+                        <div class="option">
+                            <div>
+                                <i class="fas fa-globe-europe"></i>
+                                <span>Public</span>
+                            </div>
+                            <div>
+                                <button class="cancel">Cancel</button>
+                                <button class="save">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="op">
+                <ul>
+                    <li class="active">Posts</li>
+                    <li>About</li>
+                    <li>Friends</li>
+                    <li>Photos</li>
+                    <li>Story Archive</li>
+                    <li><span>More </span><i class="fas fa-caret-down"></i></li>
+                </ul>
+                <div class="add">
+                    <button class="one"><span><i class="fas fa-plus"></i></span> Add To Story</button>
+                    <button class="two"><span><i class="fas fa-pen"></i><a href="EditProfile.html">Edit Profile</button></a>
+                    <button class="three">...</button>
+                </div>
+            </div>
+        </section>
+        <!-- content section -->
+        <section class="content">
+            <div class="row">
+                <!-- info div -->
+                <div class="col-md-5 col-xs-12">
+                    <div class="info">
+                        <h3>Intro</h3>
+                        <div class="intro">
+                            <div class="text">
+                                <span><i class="fas fa-graduation-cap"></i></span>
+                                <span>Studied at <a href="#">Harvared University</a></span></div>
+                            <div class="text">
+                                <span><i class="fas fa-graduation-cap"></i></span>
+                                <span>Went To <a href="#">El shohdaa secondary school</a></span>
+                            </div>
+                            <div class="text">
+                                <span><i class="fas fa-home"></i></span>Lives in <a href="#">America,Caleforinia</a>
+                            </div>
+                            <div class="text">
+                                <span><i class="fas fa-heart"></i></span> Single
+                            </div>
+                        </div>
+                        <div class="but">
+                            <button>Edit Details</button>
+                            <button>Add Hobbies</button>
+                            <button>Add Featured</button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <a href="allfriends.html">See All Friends</a>
+                    </div>
+                    <div class="footer">
+                        Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More · Facebook © 2021
+
+                    </div>
+                </div>
+                <!-- posts div -->
+                <div class="col-md-7 col-xs-12">
+                    <div class="posts">
+                        <!-- create post -->
+                        <div class="create-post">
+                            <div class="create">
+                                <div class="image">
+                                    <img src="images/face.png">
+                                </div>
+                                <input type="text" placeholder="What's on your mind?">
+                            </div>
+                            <div class="video">
+                                <div class="one">
+                                    <i class="fas fa-video"></i>
+                                    <span>Live Video</span>
+                                </div>
+                                <div class="two">
+                                    <i class="far fa-file-image"></i>
+                                    <span>Photo/Video</span>
+                                </div>
+                                <div class="three">
+                                    <i class="fas fa-flag"></i>
+                                    <span>Life Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filter div -->
+                        <div class="post-style">
+
+                            <div class="title">
+                                <h5>Posts</h5>
+                                <div>
+                                    <button class="filt">
+                                        <i class="fas fa-filter"></i>
+                                        <span> Filters</span>
+                                    </button>
+                                    <button class="manage">
+                                        <i class="fas fa-cog"></i>
+                                        <span> Manage Posts</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="style">
+                                <div class="list active">
+                                    <i class="fas fa-list-ul"></i>
+                                    <span>List View</span>
+                                </div>
+                                <div class="grid">
+                                    <i class="fas fa-th-large"></i>
+                                    <span>Grid View</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- posts divs -->
+                        <!-- first post -->
+                        <div class="post">
+                            <div class="user">
+                                <div class="name-image">
+                                    <div class="image">
+                                        <img src="images/face.png"/>
+                                    </div>
+                                    <div class="name-date">
+                                        <a href="#" class="name">Facebook</a>
+                                        <div class="date">
+                                            <a href="#">September 9 at 9:34pm.</a>
+                                            <i class="fas fa-globe-europe"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <li><a class="dropdown-item" href="#">delete</a></li>
+                                      <li><a class="dropdown-item" href="#">edit</a></li>
+                                      
+                                    </ul>
+                                  </div>
+                            </div>
+                            <!-- content div -->
+                            <div class="post-content">
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit officiis esse accusamus voluptas deserunt illo nesciunt ab aspernatur. Assumenda, nesciunt delectus porro pariatur iure inventore officiis tempore minima dolorem architecto?
+                            </div>
+                            <!-- actions div -->
+                            <div class="actions">
+                                <div class="like">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>Like</span>
+                                </div>
+                                <div class="comment">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>comment</span>
+                                </div>
+                                <div class="share">
+                                    <i class="fas fa-share"></i>
+                                    <span>share</span>
+                                </div>
+                            </div>
+                            <div class="write-comment">
+                                <div class="image">
+                                    <img src="images/face.png">
+                                </div>
+                                <div class="com-input">
+                                    <input type="text" placeholder="Write a Comment">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Press Enter to Post</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second post -->
+                        <div class="post">
+                            <div class="user">
+                                <div class="name-image">
+                                    <div class="image">
+                                        <img src="images/face.png"/>
+                                    </div>
+                                    <div class="name-date">
+                                        <a href="#" class="name">Facebook</a>
+                                        <div class="date">
+                                            <a href="#">September 9 at 9:34pm.</a>
+                                            <i class="fas fa-globe-europe"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- content div -->
+                            <div class="post-content">
+                                <img src="images/cat.jpg">
+                            </div>
+                            <!-- actions div -->
+                            <div class="actions">
+                                <div class="like">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>Like</span>
+                                </div>
+                                <div class="comment">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>comment</span>
+                                </div>
+                                <div class="share">
+                                    <i class="fas fa-share"></i>
+                                    <span>share</span>
+                                </div>
+                            </div>
+                            <!-- comment -->
+                            <div class="write-comment">
+                                <div class="image">
+                                    <img src="images/face.png">
+                                </div>
+                                <div class="com-input">
+                                    <input type="text" placeholder="Write a Comment">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Press Enter to Post</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- third post -->
+                        <div class="post">
+                            <div class="user">
+                                <div class="name-image">
+                                    <div class="image">
+                                        <img src="images/face.png"/>
+                                    </div>
+                                    <div class="name-date">
+                                        <a href="#" class="name">Facebook</a>
+                                        <div class="date">
+                                            <a href="#">September 9 at 9:34pm.</a>
+                                            <i class="fas fa-globe-europe"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- content div -->
+                            <div class="post-content">
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit officiis esse accusamus voluptas deserunt illo nesciunt ab aspernatur. Assumenda, nesciunt delectus porro pariatur iure inventore officiis tempore minima dolorem architecto?
+                            </div>
+                            <!-- actions div -->
+                            <div class="actions">
+                                <div class="like">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>Like</span>
+                                </div>
+                                <div class="comment">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>comment</span>
+                                </div>
+                                <div class="share">
+                                    <i class="fas fa-share"></i>
+                                    <span>share</span>
+                                </div>
+                            </div>
+                            <div class="write-comment">
+                                <div class="image">
+                                    <img src="images/face.png">
+                                </div>
+                                <div class="com-input">
+                                    <input type="text" placeholder="Write a Comment">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Press Enter to Post</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/facebook.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+<i class="fab fa-facebook"></i>
+
+<i class="far fa-home-alt"></i>
+<i class="fab fa-youtube"></i>
+
+<i class="fas fa-users"></i>
+<i class="fas fa-game-board"></i>
+
+<i class="fas fa-camera"></i>
+<i class="gg-shopping-cart"></i>
+
+<i class="fas fa-caret-down"></i>
+
+<i class="fas fa-ellipsis-h"></i>
+<i class="fas fa-bars"></i>
+<i class="fab fa-facebook-messenger"></i>
+<i class="fas fa-bell"></i>
+<i class="fas fa-globe-europe"></i>
+<i class="fas fa-plus"></i>
+<i class="fas fa-pen"></i>
+<i class="fas fa-graduation-cap"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-video"></i>
+<i class="far fa-file-image"></i>
+<i class="fas fa-flag"></i>
+<i class="fas fa-filter"></i>
+<i class="fas fa-cog"></i>
+<i class="fas fa-hat-wizard"></i>
+<i class="fas fa-list-ul"></i>
+<i class="fas fa-th-large"></i>
+<i class="far fa-thumbs-up"></i>
+<i class="far fa-comment-alt"></i>
+<i class="fas fa-share"></i>
+ -->
